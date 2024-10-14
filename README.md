@@ -100,7 +100,13 @@ ros2 launch crane_x7_simple_examples pick_and_move.launch.py use_sim_time:='true
 ```
 * for real machine
 ```
-ros2 launch crane_x7_simple_examples pick_and_move.launch.py 
+ros2 launch crane_x7_examples demo.launch.py port_name:=/dev/ttyUSB0
+ros2 launch crane_x7_simple_examples pick_and_move.launch.py
+```
+* realsence
+```
+ros2 launch crane_x7_examples demo.launch.py port_name:=/dev/ttyUSB0 use_d435:=true
+ros2 launch crane_x7_simple_examples pick_and_move.launch.py
 ```
 ![pick_and_moveのデモ動画](https://github.com/cit22ros2/crane_x7_simple_examples/assets/79034190/1ae6a7f3-ab86-4d11-852e-52d320dc2758)
 
