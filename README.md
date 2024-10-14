@@ -103,7 +103,7 @@ ros2 launch crane_x7_simple_examples pick_and_move.launch.py use_sim_time:='true
 ros2 launch crane_x7_examples demo.launch.py port_name:=/dev/ttyUSB0
 ros2 launch crane_x7_simple_examples pick_and_move.launch.py
 ```
-* realsence
+* RealSence
 ```
 ros2 launch crane_x7_examples demo.launch.py port_name:=/dev/ttyUSB0 use_d435:=true
 ros2 launch crane_x7_simple_examples pick_and_move.launch.py
