@@ -87,11 +87,15 @@ $ source ~/.bashrc
 ```
 ## 実行  
 シミュレータ（Gazebo）あるいは実機で動かす際には、可視化ツール（RViz）とGazeboの両方を起動する必要があります. 詳しくは[こちら](https://github.com/rt-net/crane_x7_ros/tree/ros2/crane_x7_examples#3-move_group%E3%81%A8controller%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%99%E3%82%8B)を確認してください.   
+
+gazebo
+
 ### pick_and_move
 ピッキング（特定の場所にある物体を掴む・持ち上げる・運ぶ・置く）を行うコードです.   
 次のコマンドで実行できます.  
 * for Gazebo
 ```
+ros2 launch crane_x7_gazebo crane_x7_with_table.launch.py
 ros2 launch crane_x7_simple_examples pick_and_move.launch.py use_sim_time:='true'
 ```
 * for real machine
